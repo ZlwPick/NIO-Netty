@@ -28,7 +28,7 @@ public class NettyClient {
                         ch.pipeline().addLast(new StringEncoder());
                     }
                 })
-                .connect(new InetSocketAddress("localhost", 8080))
+                .connect(new InetSocketAddress("localhost", 8888))
                 .sync()
                 .channel()
                 .writeAndFlush("zlwzlwzlw!~!~~");
